@@ -1,5 +1,6 @@
 # Program-CPP-NaufalArkanaMaulana_Phoebe_TLS25
 //1. FullLostPassword.cpp
+
 #include <iostream>
 #include <string>
 #include <cctype>
@@ -19,9 +20,9 @@ bool Vowel (char vow){
     return vow == 'a' or vow == 'i' or vow =='u' or vow=='e' or vow=='o';
 }
 
-//Bikin Password
+
 string BikinPass (string word){
-    //ASCII code
+
     char HurufAwal = word [0];
     int AsciiHA = (int)HurufAwal;
     string AsciiHAS = to_string(AsciiHA);
