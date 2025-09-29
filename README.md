@@ -77,9 +77,55 @@ int main (){
         cin>>input;
         Unscramble (input);
     }
+
+    
     else {
         cout << "Salah, mohon masukkan 'katasandi' atau 'unscramble'";
     }
 
     return 0;
 }
+
+//2. TrafficLight.cpp
+#include<iostream>
+#include<string>
+#include<cmath>
+#include<vector>
+//#include<cctype>
+//#include<cstdlib>
+using namespace std;
+
+int main(){
+
+    int time = 45, timeinput;
+    string color1 = "yellow", color2 = "red", color3 = "green", finalColor;
+
+    cout << "Waktu yang diinginkan: ";
+    cin >> timeinput;
+
+    if(timeinput>=45){
+        for (int i = time; i <= timeinput; i++){ 
+        
+            for(int c = 1; c <= 3 && time <= timeinput; c++, time++){
+                finalColor = color1;
+            }
+            
+            for(int a = 1; a <= 80 && time <= timeinput; a++, time++){
+                finalColor = color2;
+            }
+
+            for(int b = 1; b <= 20 && time <= timeinput; b++, time++){
+                finalColor = color3;
+            }
+
+        }
+    } else {
+        cout << "Please input time greater than or equal to 45 seconds." << endl;
+        return 0;
+    }
+
+    cout << "The color at time " << timeinput << " is " << finalColor;
+
+    return 0;
+}
+
